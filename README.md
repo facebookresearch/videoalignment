@@ -3,6 +3,9 @@
 This repository contains the code of different video alignment algorithms, to reproduce
 some of the results of the paper [LAMV: Learning to Align and Match Videos with Kernelized Temporal Layers](#lamv).
 
+Facebook also open-sourced a [C++ version of TMK](https://github.com/facebook/ThreatExchange/tree/master/hashing/tmk), see [this post](https://newsroom.fb.com/news/2019/08/open-source-photo-video-matching/) for more information.
+
+
 ## Installation
 
 Use the [environment.yml](environment.yml) file to create a conda environment with the required packages:
