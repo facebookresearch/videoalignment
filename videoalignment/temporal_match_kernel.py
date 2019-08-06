@@ -89,7 +89,7 @@ class TemporalMatchKernel(nn.Module):
             raise NotImplementedError
 
         self.a = nn.Parameter(torch.from_numpy(np_a).float())  # (T, m)
-        self.ms = (2 * np.pi * torch.arange(0, self.m)).float()
+        self.ms = 2 * np.pi * torch.arange(0, self.m).float()
         self.Ts = torch.tensor(self.T, dtype=torch.float32, requires_grad=False)
 
     def single_fv(self, ts, xs):
